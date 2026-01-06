@@ -1,0 +1,17 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "<language worker>",
+    "AzureWebJobsStorage": "<connection-string>",
+    "MyBindingConnection": "<binding-connection-string>",
+    "AzureWebJobs.HttpExample.Disabled": "true"
+  },
+  "Host": {
+    "LocalHttpPort": 7071,
+    "CORS": "*",
+    "CORSCredentials": false
+  },
+  "ConnectionStrings": {
+    "SQLConnectionString": "<sqlclient-connection-string>"
+  }
+}
