@@ -158,6 +158,13 @@ def add_new_column_to_summarysheet_about_number_of_company(
         total_number_of_employees = target_df['社員数'].sum()
         set_value_and_copy_style(summary_sheet, 5, target_col_number, total_number_of_employees)
 
+        if '3' in summary_sheetname:
+            xxx = target_df['xxx'].sum()
+            # ...
+        else:
+            yyy = target_df['yyy'].sum()
+            # ...
+
         # ...
 
         # サマリシートの各テーブル範囲を1列増やす
@@ -188,8 +195,12 @@ def add_new_column_to_summarysheet_about_number_of_employee(
         total_number_of_assigned_tasks = target_df_office['担当業務数'].mean()
         set_value_and_copy_style(summary_sheet, 5, target_col_number, total_number_of_assigned_tasks)
 
-        total_number_of_xxx =   target_df_user['xxx'].sum()
-        set_value_and_copy_style(summary_sheet, 12, target_col_number, total_number_of_xxx)
+        if '3' in summary_sheetname:
+            xxx = target_df_office['xxx'].sum()
+            # ...
+        else:
+            yyy = target_df_user['yyy'].sum()
+            # ...
 
         # ...
 
